@@ -1,0 +1,30 @@
+vpcs:
+  RandomName-49453:
+    firewallRules:
+      RandomNetwork-49453:
+        description: ''
+        direction: EGRESS
+        disabled: false
+        logging: false
+        priority: 900
+        rule:
+          allow:
+          - ports:
+            - '53'
+            protocol: tcp
+          - ports:
+            - '53'
+            protocol: upd
+          destinationRanges:
+          - 172.19.0.0/17
+          - 172.21.0.0/17
+          - 172.20.64.0/23
+          - 172.20.66.0/23
+          sourceRanges:
+          - ''
+          sourceServiceAccounts: null
+          sourceTags:
+          - ''
+          targetServiceAccounts: null
+          targetTags:
+          - ''

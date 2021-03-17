@@ -1,0 +1,28 @@
+vpcs:
+  RandomName-10873:
+    firewallRules:
+      RandomNetwork-10873:
+        description: ''
+        direction: INGRESS
+        disabled: false
+        logging: false
+        priority: 900
+        rule:
+          allow:
+          - ports:
+            - 32007-32009
+            protocol: tcp
+          destinationRanges: null
+          sourceRanges:
+          - 10.123.254.32/28
+          - 10.123.254.16/28
+          - 10.120.254.144/28
+          - 10.120.254.160/28
+          sourceServiceAccounts: null
+          sourceTags:
+          - ''
+          targetServiceAccounts: null
+          targetTags:
+          - gke-app-node
+          - gke-pii-node
+          - gke-pci-node

@@ -1,0 +1,29 @@
+vpcs:
+  RandomName-92860:
+    firewallRules:
+      RandomNetwork-92860:
+        description: ''
+        direction: INGRESS
+        disabled: false
+        logging: false
+        priority: 900
+        rule:
+          allow:
+          - ports:
+            - '443'
+            protocol: tcp
+          destinationRanges: null
+          sourceRanges:
+          - 10.42.251.200/32
+          - 10.42.251.201/32
+          - 10.42.251.202/32
+          sourceServiceAccounts: null
+          sourceTags:
+          - ''
+          targetServiceAccounts: null
+          targetTags:
+          - uscentral1
+          - fw-site-shield
+          - gke-innovation-hle-usc1-1d825657-node
+          - gke-cluster
+          - hle-qa

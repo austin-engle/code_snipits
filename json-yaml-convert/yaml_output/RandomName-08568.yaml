@@ -1,0 +1,34 @@
+vpcs:
+  RandomName-08568:
+    firewallRules:
+      RandomNetwork-08568:
+        description: ''
+        direction: INGRESS
+        disabled: false
+        logging: false
+        priority: 900
+        rule:
+          allow:
+          - ports:
+            - '80'
+            - '443'
+            protocol: tcp
+          - ports: []
+            protocol: icmp
+          destinationRanges: null
+          sourceRanges:
+          - 172.26.0.0/15
+          - 10.90.100.0/23
+          - 10.9.65.12/32
+          - 10.4.64.164/32
+          - 10.9.65.11/32
+          - 10.4.64.163/32
+          - 10.64.100.0/23
+          - 10.4.64.166/32
+          sourceServiceAccounts: null
+          sourceTags:
+          - ''
+          targetServiceAccounts: null
+          targetTags:
+          - nde-admin
+          - cloud-mgmt

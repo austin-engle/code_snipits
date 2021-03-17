@@ -1,0 +1,1 @@
+This is a simple outline of some things to do with the requests module. I made this as part of a training I did in python3

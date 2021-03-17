@@ -1,0 +1,24 @@
+vpcs:
+  RandomName-41590:
+    firewallRules:
+      RandomNetwork-41590:
+        description: ''
+        direction: INGRESS
+        disabled: false
+        logging: false
+        priority: 900
+        rule:
+          allow:
+          - ports:
+            - '3306'
+            protocol: tcp
+          destinationRanges: null
+          sourceRanges:
+          - 10.214.194.96/28
+          sourceServiceAccounts: null
+          sourceTags:
+          - ''
+          targetServiceAccounts: null
+          targetTags:
+          - nde-mgmt
+          - fw-cavisson-ns

@@ -1,0 +1,18 @@
+# install virtual env
+pip install virtualenv
+
+# create virtual environment with specific name. Note: this is installed in the current directory
+virtualenv $name_of_env
+
+# activate python environment
+source $name_of_env/bin/activate
+
+# Should show prompt of environment
+# `which python` will also show environment
+
+# Export packages and version number to another project
+pip freeze --local > requirements.txt
+
+# Exit python environment
+deactive
+

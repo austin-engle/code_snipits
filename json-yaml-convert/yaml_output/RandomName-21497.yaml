@@ -1,0 +1,27 @@
+vpcs:
+  RandomName-21497:
+    firewallRules:
+      RandomNetwork-21497:
+        description: ''
+        direction: INGRESS
+        disabled: false
+        logging: false
+        priority: 900
+        rule:
+          allow:
+          - ports:
+            - '7892'
+            - '7898'
+            - '80'
+            - '443'
+            - '8080'
+            protocol: tcp
+          destinationRanges: null
+          sourceRanges:
+          - 10.9.65.13/32
+          sourceServiceAccounts: null
+          sourceTags:
+          - ''
+          targetServiceAccounts: null
+          targetTags:
+          - nde-mgmt

@@ -1,0 +1,24 @@
+vpcs:
+  RandomName-87368:
+    firewallRules:
+      RandomNetwork-87368:
+        description: ''
+        direction: INGRESS
+        disabled: false
+        logging: false
+        priority: 900
+        rule:
+          allow:
+          - ports:
+            - '80'
+            - '443'
+            protocol: tcp
+          destinationRanges: null
+          sourceRanges:
+          - 10.9.65.13/32
+          sourceServiceAccounts: null
+          sourceTags:
+          - ''
+          targetServiceAccounts: null
+          targetTags:
+          - gke-app-node

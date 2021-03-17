@@ -1,0 +1,24 @@
+vpcs:
+  RandomName-79228:
+    firewallRules:
+      RandomNetwork-79228:
+        description: ''
+        direction: INGRESS
+        disabled: false
+        logging: false
+        priority: 900
+        rule:
+          allow:
+          - ports:
+            - 3306-3307
+            - 27017-27020
+            protocol: tcp
+          destinationRanges: null
+          sourceRanges:
+          - 10.186.64.0/23
+          sourceServiceAccounts: null
+          sourceTags:
+          - ''
+          targetServiceAccounts: null
+          targetTags:
+          - mongodb-hle

@@ -1,0 +1,26 @@
+vpcs:
+  RandomName-05393:
+    firewallRules:
+      RandomNetwork-05393:
+        description: ''
+        direction: EGRESS
+        disabled: false
+        logging: false
+        priority: 900
+        rule:
+          allow:
+          - ports:
+            - '8080'
+            - '8443'
+            protocol: tcp
+          destinationRanges:
+          - 10.186.6.0/23
+          - 10.190.6.0/23
+          sourceRanges:
+          - ''
+          sourceServiceAccounts: null
+          sourceTags:
+          - ''
+          targetServiceAccounts: null
+          targetTags:
+          - paas-openshift-master

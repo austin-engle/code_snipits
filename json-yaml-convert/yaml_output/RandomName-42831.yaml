@@ -1,0 +1,26 @@
+vpcs:
+  RandomName-42831:
+    firewallRules:
+      RandomNetwork-42831:
+        description: ''
+        direction: INGRESS
+        disabled: false
+        logging: false
+        priority: 900
+        rule:
+          allow:
+          - ports:
+            - '2222'
+            - 24007-24008
+            - 49152-49251
+            protocol: tcp
+          destinationRanges: null
+          sourceRanges:
+          - 10.186.232.0/23
+          - 10.190.152.0/23
+          sourceServiceAccounts: null
+          sourceTags:
+          - ''
+          targetServiceAccounts: null
+          targetTags:
+          - cx-gke-glusterfs
