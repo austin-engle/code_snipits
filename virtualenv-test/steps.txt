@@ -14,5 +14,5 @@ source $name_of_env/bin/activate
 pip freeze --local > requirements.txt
 
 # Exit python environment
-deactive
+deactivate
 
