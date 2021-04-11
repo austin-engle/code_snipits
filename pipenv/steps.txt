@@ -1,0 +1,17 @@
+# install pipenv
+pip install pipenv
+
+# Install from Pipfile, if there is one:
+pipenv install
+
+# add a package to your new project:
+pipenv install <package>
+
+# Next, activate the Pipenv shell:
+pipenv shell
+python --version
+which python
+
+# Exit python environment
+exit
+
