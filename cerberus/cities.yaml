@@ -1,0 +1,26 @@
+states:
+  utah:
+    cities:
+      - 'Lehi'
+      - 'Provo'
+      - 'Eagle Mountain'
+    capital: 'Salt Lake City'
+    stateflower: 'Sego lily'
+  texas:
+    cities:
+      - 'Houston'
+      - 'San Antonio'
+    capital: 'Austin'
+    stateflower: 'Bluebonnet'
+  illinois:
+    cities:
+      - 'Quincy'
+      - 'Chicago'
+    capital: 'Springfield'
+    stateflower: 'Common blue violet'
+  missouri:
+    cities:
+      - 'Hannibal'
+      - 'Branson'
+    capital: 'Jefferson City'
+    stateflower: 'Crataegus punctata'
